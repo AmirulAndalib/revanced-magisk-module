@@ -34,7 +34,7 @@ jobs:
           echo "NEXT_VER_CODE=$((TAG + 1))" >> $GITHUB_OUTPUT
 
       - name: Build modules/APKs
-        run: ./build.sh config.toml
+        run: ./build.sh config-rv-ex.toml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
@@ -112,7 +112,7 @@ jobs:
         run: |
           cd build || echo "build folder not found"; exit 1
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@RevancedExtendedMagisk"
           NL=$'\n'
           APKS=""
           MODULES=""
@@ -126,9 +126,10 @@ jobs:
           done
           MODULES=${MODULES#"$NL"}
           APKS=${APKS#"$NL"}
+          TIME="```${date}```"
 
           BODY="$(sed 's/^\* \*\*/↪ \*\*/g; s/^\* `/↪ \*\*/g; s/`/\*/g; s/^\* /\↪/g; s/\*\*/\*/g; s/###//g;' ../build.md)"
-          MSG="*New build!*
+          MSG="*New build!*, $TIME
 
           ${BODY}
 
