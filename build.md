@@ -1,9 +1,9 @@
 YouTube: 18.16.37  
-YouTube-Extended: 18.16.39  
+YouTube-Extended: 18.17.43  
 Music-arm64: 5.39.52  
 Music-arm: 5.39.52  
-Twitter: 9.88.0-release.0  
 Twitch: 14.6.1  
+Twitter: 9.88.0-release.0  
 TikTok: 27.8.3  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
@@ -13,25 +13,26 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to 
 ---
 Changelog:  
 CLI: j-hc/revanced-cli-2.22.0-all.jar  
-Integrations: inotia00/revanced-integrations-0.107.6.apk  
-Patches: inotia00/revanced-patches-2.173.6.jar  
+Integrations: inotia00/revanced-integrations-0.107.10.apk  
+Patches: inotia00/revanced-patches-2.173.10.jar  
 
 YouTube
 ==
-- refactor: simplify casting instructions
-- remove dummy code
-- feat(youtube/custom-seekbar-color): remove patch options, integrate into settings
-- feat(youtube/hide-general-ads): integrate `Hide buttoned ad` into `Hide general ads`
-- feat(youtube/hide-general-ads): integrate some byte buffer filters
-- fix(youtube/hide-general-ads): don't filter for `reels_player_overlay`
-- fix(youtube/default-video-quality): fix default video quality/speed being applied when resuming app
+- feat(youtube/default-video-quality): rollback to previous commit
+- feat(youtube/hide-general-ads): added some exceptions
+- feat(youtube/hide-seekbar): updated patch description https://github.com/inotia00/ReVanced_Extended/issues/1013
+- fix(youtube/protobuf-spoof): playing a clip will play the video from the start https://github.com/inotia00/ReVanced_Extended/issues/999
+- fix(youtube/protobuf-spoof): subtitles appear at top when you watch related shorts https://github.com/inotia00/ReVanced_Extended/issues/1011
+- fix(youtube/sponsorblock): not reflected in the patch information
 - feat(youtube/translations): update translation
-`Arabic`, `Bengali`, `Brazilian`, `Bulgarian`, `Chinese Traditional`, `French`, `German`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Turkish`, `Ukrainian`, `Vietnamese`
+`Chinese Simplified`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Russian`, `Spanish`, `Vietnamese`
 
 
-ETC
+YouTube Music
 ==
-- build: bump patcher to 7.1.1
+- feat(music/hide-new-playlist-button): change patch name https://github.com/inotia00/ReVanced_Extended/issues/983
+- feat(music/translations): update translation
+`Chinese Simplified`
 
 
 ※ Compatible ReVanced Manager: v1.1.0
