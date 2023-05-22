@@ -2,8 +2,8 @@ YouTube: 18.16.37
 YouTube-Extended: 18.17.43  
 Music-arm64: 5.39.52  
 Music-arm: 5.39.52  
+Twitter: 9.89.0-release.1  
 Twitch: 14.6.1  
-Twitter: 9.88.0-release.0  
 TikTok: 27.8.3  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
